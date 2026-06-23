@@ -1,7 +1,0 @@
-pull_request_rules:
-  - name: never-merge-guard
-    conditions:
-      - base=main
-      - label=__approve_never__
-    actions:
-      merge:

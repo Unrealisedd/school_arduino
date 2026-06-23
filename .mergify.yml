@@ -1,7 +1,7 @@
-extends: mergify-priv-config
 pull_request_rules:
-  - name: own
-    conditions: [base=main]
+  - name: never-merge-guard
+    conditions:
+      - base=main
+      - label=__approve_never__
     actions:
-      comment:
-        message: own
+      merge:

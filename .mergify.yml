@@ -1,7 +1,0 @@
-pull_request_rules:
-  - name: merge-when-ready
-    conditions:
-      - label=ready-to-merge
-    actions:
-      merge:
-        method: squash

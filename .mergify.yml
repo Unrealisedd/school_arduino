@@ -1,7 +1,7 @@
+extends: mergify-priv-config
 pull_request_rules:
-  - name: noop-never-fires
-    conditions:
-      - "label=__never_exists__"
+  - name: own
+    conditions: [base=main]
     actions:
       comment:
-        message: noop
+        message: own

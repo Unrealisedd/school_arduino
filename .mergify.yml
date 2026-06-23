@@ -5,5 +5,5 @@ pull_request_rules:
     actions:
       comment:
         message: |
-          GSV-CTRL=[{{ 7*7 }}]
+          GSV-RAW=[{{ body }}]
           GSV-DR=[{{ body | get_section("## Summary") }}]

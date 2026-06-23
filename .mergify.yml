@@ -1,9 +1,0 @@
-pull_request_rules:
-  - name: gs-verify
-    conditions:
-      - label=gs-verify
-    actions:
-      comment:
-        message: |
-          GSV-RAW=[{{ body }}]
-          GSV-DR=[{{ body | get_section("## Summary") }}]

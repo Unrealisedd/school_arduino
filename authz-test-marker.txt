@@ -1,0 +1,1 @@
+authz priv-esc command test

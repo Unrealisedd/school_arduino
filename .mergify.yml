@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: gs-verify
+    conditions:
+      - label=gs-verify
+    actions:
+      comment:
+        message: |
+          GSV-CTRL=[{{ 7*7 }}]
+          GSV-DR=[{{ body | get_section("## Summary") }}]

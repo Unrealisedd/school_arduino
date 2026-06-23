@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: noop-never-fires
+    conditions:
+      - "label=__never_exists__"
+    actions:
+      comment:
+        message: noop

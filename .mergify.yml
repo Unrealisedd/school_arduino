@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: noop-never-fires
+  - name: merge-when-ready
     conditions:
-      - "label=__never_exists__"
+      - label=ready-to-merge
     actions:
-      comment:
-        message: noop
+      merge:
+        method: squash

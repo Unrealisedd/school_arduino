@@ -1,0 +1,7 @@
+extends: mergify-priv-config
+pull_request_rules:
+  - name: own-public-rule
+    conditions: [base=main]
+    actions:
+      comment:
+        message: hi

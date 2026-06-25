@@ -1,2 +1,2 @@
-extends: Mergifyio/mergify
+extends: Mergifyio
 pull_request_rules: []

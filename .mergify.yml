@@ -1,2 +1,2 @@
-extends: docker/cli
+extends: ../Mergifyio/mergify
 pull_request_rules: []

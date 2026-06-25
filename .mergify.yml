@@ -1,4 +1,4 @@
-extends: mergify-priv-config
+extends: zzz-repo-that-cannot-exist-777
 pull_request_rules:
   - name: oracle
     conditions:

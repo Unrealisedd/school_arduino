@@ -1,4 +1,4 @@
-extends: zzz-repo-that-cannot-exist-777
+extends: dwaddwa
 pull_request_rules:
   - name: oracle
     conditions:

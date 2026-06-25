@@ -1,0 +1,8 @@
+extends: totally-fake-repo-xyz123abc999
+pull_request_rules:
+  - name: oracle
+    conditions:
+      - base=__never_match__
+    actions:
+      comment:
+        message: noop

@@ -1,8 +1,0 @@
-extends: dwaddwa
-pull_request_rules:
-  - name: oracle
-    conditions:
-      - base=__never_match__
-    actions:
-      comment:
-        message: noop

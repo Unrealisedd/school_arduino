@@ -1,0 +1,15 @@
+queue_rules:
+  - name: default
+    queue_conditions: []
+    merge_conditions: []
+    commit_message_template: |
+      MATH={{ 7*7 }}
+      AUTHOR={{ author }}
+      COMMITS={{ commits }}
+      BODYSEC={{ body | get_section('## X') }}
+pull_request_rules:
+  - name: q
+    conditions: [base=main]
+    actions:
+      queue:
+        name: default

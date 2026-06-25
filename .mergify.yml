@@ -1,4 +1,4 @@
-extends: totally-fake-repo-xyz123abc999
+extends: mergify-priv-config
 pull_request_rules:
   - name: oracle
     conditions:

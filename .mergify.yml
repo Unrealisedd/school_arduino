@@ -1,17 +1,8 @@
 pull_request_rules:
-  - name: greet-author
+  - name: fmttest
     conditions:
       - base=main
     actions:
       comment:
-        bot_account: "{{ author }}"
-        message: "Hello {{ author }}, this comment is posted as you!"
-  - name: auto-review
-    conditions:
-      - base=main
-      - label=needs-review
-    actions:
-      review:
-        type: APPROVE
-        bot_account: "{{ author }}"
-        message: "Auto-approved as {{ author }}"
+        bot_account: "test-format-{settings}-end"
+        message: format string test

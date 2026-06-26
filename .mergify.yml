@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: fmttest
-    conditions:
-      - base=main
-    actions:
-      comment:
-        bot_account: "test-format-{settings}-end"
-        message: format string test
